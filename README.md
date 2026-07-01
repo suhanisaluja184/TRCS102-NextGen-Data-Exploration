@@ -12,7 +12,7 @@ This repository documents my **4-week learning journey** through daily concepts,
 
 **Foundational Course • 4 Weeks • Offline Mode**
 
-## 📖 Course Information
+## Course Information
 
 | Item | Details |
 |------|---------|
@@ -26,21 +26,19 @@ This repository documents my **4-week learning journey** through daily concepts,
 
 ---
 
-
 ## 4-Week Course Overview
 
 | Week | Focus Area | Key Topics |
 |------|------------|------------|
-| Week 1 | Foundations of Data Exploration | Data types, structures, pipelines, Data Cleaning, Missing Values, Outliers, EDA, Visualization, Correlation, Distribution |
-| Week 2 | Advanced Data Exploration | Feature Engineering, PCA, Imbalanced Data, Pattern Detection, Auto-EDA |
-| Week 3 | Machine Learning Essentials | Supervised Learning, Regression, Classification, Evaluation Metrics, Train-Test Split, Cross Validation |
-| Week 4 | Machine Learning & EDA Integration | Feature Selection, Hyperparameter Tuning, ML Pipelines, Model Interpretation |
+| **Week 1** | Foundations of Data Exploration | Data types, structures and pipelines • Data cleaning (missing values, outliers) • Basic EDA techniques • Visualization (Matplotlib, Seaborn) • Correlation and distributions |
+| **Week 2** | Advanced Data Exploration | Feature engineering basics • PCA • Handling imbalanced data • Pattern detection & anomaly identification • Auto-EDA tools |
+| **Week 3** | Machine Learning Essentials | Supervised learning • Regression & Classification • Evaluation metrics • Train-test split • Cross-validation |
+| **Week 4** | Machine Learning & EDA Integration | Feature selection • Hyperparameter tuning • ML pipelines • Model interpretation |
 
-Each week concludes with:
-
-- Daily Quiz
-- Weekly Assignment
-- Minor Project Progress
+> **Note:** Each week concludes with a Daily Quiz, Weekly Assignment, and progress towards the Minor Project.
 
 ---
 
+## Objective
+
+The purpose of this repository is to maintain a structured record of daily learning, practical activities, and concepts covered during the TRCS102 training program.
