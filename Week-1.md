@@ -1,149 +1,30 @@
-# WEEK 1
+# Week 1 — Foundations of Data Exploration
 
-# Foundations of Data Exploration
+This week introduced the fundamental concepts of data exploration and Python programming that are essential for understanding data analytics and machine learning. Each day's activities and learning outcomes are documented below.
 
-> **Weekly Goal**
->
-> Build a strong foundation in data exploration by understanding different types of data, basic data preprocessing techniques, exploratory data analysis (EDA), and the role of Machine Learning and Generative AI in solving real-world problems.
+---
+## Week 1 • Day 1
+
+| **Section** | **Details** |
+|-------------|-------------|
+| **Date** | **30 June 2026** |
+| **Course Overview** | The first day of the **TRCS102 – Next-Gen Data Exploration with Machine Learning & Generative AI** training began with an introduction to the course objectives, learning outcomes, assessment pattern, and the four-week training roadmap. The trainer explained how the course would gradually progress from the fundamentals of data exploration to machine learning concepts and their practical implementation. Students were also briefed about the minor project that would be completed during the training. |
+| **Data Concepts** | The session introduced the concept of **Data**, explaining that it consists of raw facts and observations collected from various sources. The distinction between **Data** and **Information** was discussed to highlight how processed data becomes meaningful and supports decision-making. Various **Data Sources** such as databases, spreadsheets, websites, APIs, sensors, and social media platforms were explored with practical examples. |
+| **Types of Data** | Different **Types of Data** were explained, including **Structured**, **Semi-Structured**, and **Unstructured Data**, along with numerical and categorical data. |
+| **Data Modality** | The trainer introduced the concept of **Data Modality**, explaining how data can exist in multiple forms such as text, images, audio, video, tabular data, and time-series data. Understanding these modalities helps in selecting appropriate techniques for data analysis and machine learning. |
+| **Exploration & Outliers** | The importance of **Data Exploration** was discussed as the first step in every data science project. The trainer explained how exploring a dataset helps identify missing values, outliers, relationships, and patterns before applying machine learning algorithms. The concept of **Outliers** was introduced, along with examples showing how unusual observations can affect statistical analysis and model performance. |
+| **ML & Generative AI** | The session concluded with an introductory discussion on **Machine Learning** and **Generative AI**. The trainer explained how Machine Learning enables computers to learn patterns from data, while Generative AI focuses on creating new content such as text, images, code, and audio. Several real-world applications, including recommendation systems, chatbots, image generation, fraud detection, and medical diagnosis, were briefly discussed to provide an overview of the technologies that will be explored throughout the training. |
 
 ---
 
-# 📅 Week 1 • Day 1
+## Week 1 • Day 2
 
-| **Date** | **30 June 2026** | **Session Time** | ____________ |
-|-----------|------------------|------------------|--------------|
-
-# 📚 Topics Covered
-
-## Course Introduction
-
-The training began with an overview of the **TRCS102 – Next-Gen Data Exploration with Machine Learning & Generative AI** course. The trainer explained the objectives, course structure, learning outcomes, and the importance of data-driven technologies in today's industry. Students were introduced to the four-week training roadmap and the minor project that would be completed during the course.
-
----
-
-## What is Data?
-
-Data refers to raw facts, figures, observations, or measurements collected from various sources. By itself, data has little meaning until it is processed and organized.
-
-### Information
-
-Information is processed and organized data that provides meaningful insights and supports decision-making.
-
----
-
-## Data Sources
-
-Data can be collected from numerous sources, including:
-
-- Databases
-- Websites
-- Surveys
-- APIs
-- IoT Sensors
-- Social Media Platforms
-- Spreadsheets
-
-Understanding data sources helps identify where useful information originates before analysis begins.
-
----
-
-## Types of Data
-
-The trainer discussed the different categories of data commonly used in data science.
-
-- Structured Data
-- Semi-Structured Data
-- Unstructured Data
-
-Data can also be classified as:
-
-- Numerical Data
-- Categorical Data
-
----
-
-## Introduction to Data Exploration
-
-Data Exploration is the process of examining a dataset to understand its structure, identify patterns, detect missing values, discover relationships, and identify anomalies before applying machine learning algorithms.
-
-It is one of the most important steps in the data analysis pipeline.
-
----
-
-## Data Modality
-
-Data exists in multiple formats known as data modalities.
-
-Examples include:
-
-- Text
-- Images
-- Audio
-- Video
-- Tabular Data
-- Time-Series Data
-
-Different machine learning techniques are applied depending on the type of data being analyzed.
-
----
-
-## Outliers
-
-Outliers are observations that differ significantly from the majority of the data.
-
-They may occur because of:
-
-- Measurement errors
-- Incorrect data entry
-- Natural variation
-- Rare events
-
-Identifying outliers is important because they can influence statistical analysis and machine learning models.
-
----
-
-## Why Machine Learning?
-
-Traditional programming requires explicitly defined rules for every task.
-
-Machine Learning enables computers to learn patterns directly from data and make predictions or decisions without being programmed for every possible scenario.
-
-Some common applications include:
-
-- Email Spam Detection
-- Recommendation Systems
-- Image Recognition
-- Fraud Detection
-- Medical Diagnosis
-
----
-
-## Introduction to Generative AI
-
-Generative AI is a branch of Artificial Intelligence capable of generating new content such as text, images, code, audio, and videos by learning patterns from existing data.
-
-Popular applications include intelligent chatbots, image generation, code assistants, document summarization, and content creation tools.
-
-The trainer briefly explained how Generative AI differs from traditional Machine Learning by focusing on content generation rather than only prediction.
-
----
-
-# 📝 Learning Summary
-
-| **Key Learnings** | **Practical / Hands-on Work** | **Doubts / Questions** |
-|-------------------|-------------------------------|------------------------|
-| Understood the objectives and structure of the TRCS102 training program. | Attended the course orientation session and interacted with the trainer. | |
-| Learned the basic concepts of data, information, data sources, and data types. | Discussed real-world examples of structured and unstructured data. | |
-| Gained an overview of Data Exploration, Machine Learning, and Generative AI. | Explored practical applications of AI and ML across different industries. | |
-
----
-
-# 🔗 Reference Resources
-
-- Python Documentation: https://docs.python.org/3/
-- NumPy Documentation: https://numpy.org/doc/
-- Pandas Documentation: https://pandas.pydata.org/docs/
-- Matplotlib Documentation: https://matplotlib.org/
-- Seaborn Documentation: https://seaborn.pydata.org/
+| **Section** | **Details** |
+|-------------|-------------|
+| **Date** | **01 July 2026** |
+| **Topics Covered** | The session focused on Python fundamentals including **data types** (Integer, Float, String, Boolean) and **data structures** (List, Tuple, Dictionary, Set). The trainer also introduced **Pandas Series and DataFrames**, which are essential for data analysis and handling structured datasets. |
+| **Practical Work** | Executed Python programs on data types and data structures. Practiced creating and manipulating Lists, Tuples, Dictionaries, Sets, and basic Pandas objects in Google Colab. |
+| **Practice Assigned** | Wrote Python programs demonstrating data types and structures. Practiced creating Lists, Tuples, Dictionaries, Sets, and Pandas objects. |
+| **Study Links** | **Trainer’s Notebook:** [Google Colab](https://colab.research.google.com/drive/1G9JkmY5zoWsuCv93gpGI79sGQvJP7U4a)<br>**My Practice Notebook:** [Day‑2 Practice Notebook](Practice/Week-1/Day-2-Practice.ipynb) |
 
 ---
