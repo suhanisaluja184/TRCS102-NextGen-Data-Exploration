@@ -6,39 +6,55 @@ This repository documents my **4-week learning journey** through daily concepts,
 
 ---
 
-## DAILY TRAINING DIARY
+# Daily Training Diary
 
-### Next-Gen Data Exploration with ML & Generative AI
+### Next-Gen Data Exploration with ML and Generative AI
 
-**Foundational Course • 4 Weeks • Offline Mode**
-
-## Course Information
-
-| Item | Details |
-|------|---------|
-| Course Code | TRCS102 |
-| Course Name | Next-Gen Data Exploration with Machine Learning & Generative AI |
-| Trainee | Suhani Saluja |
-| Roll No. | 2435184 |
-| Trainer | Prof. Kajal Chugh |
-| Duration | 4 Weeks |
+| Detail | Info |
+|---|---|
+| Duration | 4 Weeks (Foundational)  |
 | Mode | Offline |
+| Course Type | Foundational Course (4 Weeks + Minor Project) |
+| Repository Purpose | Daily log of topics covered, key learnings, and practice work during training |
 
 ---
 
-## 4-Week Course Overview
+## About This Repository
+
+This repository is a day-by-day training diary maintained throughout the course. Each day's session is documented in its own file under the `days/` folder, covering the topics taught, key learnings, and links to the practice notebooks used in class.
+
+---
+
+## Course Structure
+
+### Foundational Course (4 Weeks + Minor Project)
 
 | Week | Focus Area | Key Topics |
-|------|------------|------------|
-| **Week 1** | Foundations of Data Exploration | Data types, structures and pipelines • Data cleaning (missing values, outliers) • Basic EDA techniques • Visualization (Matplotlib, Seaborn) • Correlation and distributions |
-| **Week 2** | Advanced Data Exploration | Feature engineering basics • PCA • Handling imbalanced data • Pattern detection & anomaly identification • Auto-EDA tools |
-| **Week 3** | Machine Learning Essentials | Supervised learning • Regression & Classification • Evaluation metrics • Train-test split • Cross-validation |
-| **Week 4** | Machine Learning & EDA Integration | Feature selection • Hyperparameter tuning • ML pipelines • Model interpretation |
+|---|---|---|
+| Week 1 | Foundations of Data Exploration | Data types, structures, and pipelines; Data cleaning (missing values, outliers); Basic EDA techniques; Visualization (Matplotlib, Seaborn); Correlation and distributions |
+| Week 2 | Advanced Data Exploration | Feature engineering basics; PCA (intuitive understanding); Handling imbalanced data; Pattern detection & anomaly identification; Auto-EDA tools |
+| Week 3 | Machine Learning Essentials | Supervised learning basics; Regression & classification; Evaluation metrics; Train-test split & cross-validation |
+| Week 4 | Machine Learning and EDA Integration | Feature selection; Hyperparameter tuning (basics); ML pipelines; Model interpretation |
 
-> **Note:** Each week concludes with a Daily Quiz, Weekly Assignment, and progress towards the Minor Project.
+
+**Assessment Structure:**
+- Daily Quiz
+- Weekly Assignment - with Practical Problems
+- Project Submission - Within Two Weeks after completion of the course
 
 ---
 
-## Objective
 
-The purpose of this repository is to maintain a structured record of daily learning, practical activities, and concepts covered during the TRCS102 training program.
+## Weekly Logs
+ 
+Each week's diary (7 days per week, 28 days across the 4-week Foundational Course) is maintained in its own file.
+ 
+| Week | Focus Area | Diary Entry |
+|---|---|---|
+| Week 1 | Foundations of Data Exploration | [View](Week1.md) |
+| Week 2 | Advanced Data Exploration | [View](Week2.md) |
+| Week 3 | Machine Learning Essentials | [View](Week3.md) |
+| Week 4 | Machine Learning and EDA Integration | [View](Week4.md) |
+ 
+---
+
