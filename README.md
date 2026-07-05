@@ -51,10 +51,10 @@ Each week's diary (7 days per week, 28 days across the 4-week Foundational Cours
  
 | Week | Focus Area | Diary Entry |
 |---|---|---|
-| Week 1 | Foundations of Data Exploration | [View](Week1.md) |
-| Week 2 | Advanced Data Exploration | [View](Week2.md) |
-| Week 3 | Machine Learning Essentials | [View](Week3.md) |
-| Week 4 | Machine Learning and EDA Integration | [View](Week4.md) |
+| Week 1 | Foundations of Data Exploration | [View](Week-1.md) |
+| Week 2 | Advanced Data Exploration | [View](Week-2.md) |
+| Week 3 | Machine Learning Essentials | [View](Week-3.md) |
+| Week 4 | Machine Learning and EDA Integration | [View](Week-4.md) |
  
 ---
 
