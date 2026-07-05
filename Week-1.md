@@ -30,15 +30,15 @@ Additionally, the difference between **Numerical Data** (quantitative values lik
 ---
 
 ### Data Modality
-The concept of **Data Modality** was introduced, emphasizing that data can exist in various forms:
-- Text
-- Images
-- Audio
-- Video
-- Tabular data
-- Time-series data
-
-Understanding these modalities is crucial for selecting appropriate techniques in data analysis and machine learning.
+- Data can exist in multiple forms, each requiring specialized techniques for analysis and machine learning.  
+- **Text** captures written or spoken language and is widely used in NLP tasks.  
+- **Images** represent visual information, often analyzed with computer vision methods.  
+- **Audio** stores sound patterns, enabling speech recognition and acoustic analysis.  
+- **Video** combines sequential visuals and audio, requiring temporal and spatial modeling.  
+- **Tabular data** is structured in rows and columns, common in databases and spreadsheets.  
+- **Time‑series data** records values across time intervals, essential for forecasting and trend analysis.
+   
+Recognizing these modalities is crucial because the choice of algorithms, preprocessing methods, and models depends heavily on the nature of the data being handled. 
 
 ---
 
@@ -49,17 +49,22 @@ The concept of **Outliers** was discussed with examples, showing how unusual obs
 
 ---
 
-### Machine Learning & Generative AI
-The session concluded with an introduction to **Machine Learning (ML)** and **Generative AI**.
-- ML enables computers to learn patterns from data and make predictions.
-- Generative AI focuses on creating new content such as text, images, audio, and code.
-
-**Applications highlighted:**
-- Recommendation systems
-- Chatbots
-- Image generation
-- Fraud detection
-- Medical diagnosis
+### Machine Learning & Generative AI  
+- The session concluded with an introduction to **Machine Learning (ML)** and **Generative AI**.  
+- **Machine Learning (ML)** enables computers to learn patterns from data and make predictions.  
+- **Generative AI** focuses on creating new content such as text, images, audio, and code.  
+- Applications highlighted include:  
+  - Personalized product recommendations  
+  - Intelligent chatbots for customer support  
+  - Automated image and video generation  
+  - Fraud detection in financial transactions  
+  - Predictive analytics in healthcare diagnosis  
+- **Example – Amazon Collaboration:**  
+  Amazon uses ML and Generative AI to collaborate with different business companies by hosting their products on its marketplace.  
+  - **Recommendation systems** suggest relevant products to customers based on browsing and purchase history.  
+  - **Generative AI tools** help sellers create product descriptions, images, and marketing content.  
+  - **Fraud detection models** protect both Amazon and partner businesses from fraudulent activities.  
+  This collaboration allows small and large companies to reach global customers while leveraging Amazon’s AI‑powered ecosystem.  
 
 ---
 
