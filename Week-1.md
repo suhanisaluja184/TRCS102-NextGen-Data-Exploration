@@ -6,8 +6,8 @@ This week introduced the fundamental concepts of data exploration and Python pro
 
 # Day 01 - Introduction to Data, ML & Generative AI
 
-**Date:** 30/06/2026
-**Week:** 1 · Foundational Course
+**Date:** 30/06/2026 <br>
+**Week:** 1 · Foundational Course <br>
 **Session Focus:** Foundations of Data Exploration
 
 ---
@@ -53,31 +53,24 @@ The concept of **Outliers** was discussed with examples, showing how unusual obs
 - The session concluded with an introduction to **Machine Learning (ML)** and **Generative AI**.  
 - **Machine Learning (ML)** enables computers to learn patterns from data and make predictions.  
 - **Generative AI** focuses on creating new content such as text, images, audio, and code.  
-- Applications highlighted include:  
-  - Personalized product recommendations  
-  - Intelligent chatbots for customer support  
-  - Automated image and video generation  
-  - Fraud detection in financial transactions  
-  - Predictive analytics in healthcare diagnosis  
-- **Example – Amazon Collaboration:**  
-  Amazon uses ML and Generative AI to collaborate with different business companies by hosting their products on its marketplace.  
-  - **Recommendation systems** suggest relevant products to customers based on browsing and purchase history.  
-  - **Generative AI tools** help sellers create product descriptions, images, and marketing content.  
-  - **Fraud detection models** protect both Amazon and partner businesses from fraudulent activities.  
-  This collaboration allows small and large companies to reach global customers while leveraging Amazon’s AI‑powered ecosystem.  
+### Applications highlighted include:  
+- Personalized product recommendations  
+- Intelligent chatbots for customer support  
+- Automated image and video generation  
+- Fraud detection in financial transactions  
+- Predictive analytics in healthcare diagnosis    
 
 ---
 
 ## Key Learnings
-- Data becomes valuable only once it's turned into Information.
+- Data becomes valuable once it's turned into Information.
 - Data type and modality decide which tools/models to use later.
-- Outliers can be errors *or* important insights - always worth investigating.
-- ML predicts from patterns; Gen AI creates new content - different goals.
+- ML predicts from patterns; Gen AI creates new content.
 
 ---
 
 ## Reflection
-Day 1 set a good foundation - the Data vs Information distinction made a lot of things click, especially why raw numbers alone don't mean much until they're organized. The data modality and outlier concepts felt a little abstract without seeing real code yet, so I want to revisit these once I actually work with a dataset. Looking forward to connecting today's theory with hands-on practice in the next few days.
+Good foundation day - the Data vs Information distinction was the clearest takeaway. Data modality and outliers still feel a bit abstract without real code, so I want to revisit them once I start working with an actual dataset.
 
 
 
@@ -85,8 +78,8 @@ Day 1 set a good foundation - the Data vs Information distinction made a lot of 
 
 # Day 02 - Python Data Types, Data Structures & Intro to Pandas
 
-**Date:** 01/07/2026
-**Week:** 1 · Foundational Course
+**Date:** 01/07/2026 <br>
+**Week:** 1 · Foundational Course <br>
 **Session Focus:** Python Fundamentals for Data Analysis
 
 ---
@@ -138,16 +131,15 @@ Since data analytics rarely works with single values, four core collection types
 ---
 
 ## Reflection
-Today felt more hands-on and satisfying since I could actually run code and see outputs immediately. The 12 practice questions helped reinforce when to use a list vs a tuple vs a dictionary - I was mixing these up before. The Rock-Paper-Scissors exercise was the most fun and made loops and conditionals feel less mechanical. Pandas Series and DataFrames still feel new; I want to spend more time exploring DataFrame operations before the next session.
-
+More hands-on and satisfying since I could run code and see results right away. The practice questions cleared up confusion between lists, tuples, and dictionaries. Want to spend more time on DataFrames before the next session.
 
 
 ---
 
 # Day 03 - Data Cleaning: Missing Values, Duplicates & Outliers
 
-**Date:** 02/07/2026
-**Week:** 1 · Foundational Course
+**Date:** 02/07/2026 <br>
+**Week:** 1 · Foundational Course <br>
 **Session Focus:** Data Cleaning Techniques
 
 ---
@@ -156,8 +148,6 @@ Today felt more hands-on and satisfying since I could actually run code and see 
 The session covered **Data Cleaning** - the process of identifying and correcting errors, inconsistencies, and inaccuracies in raw data before analysis. All commands were demonstrated on the student dataset as a teaching example.
 
 **Trainer's Notes (Colab):** [Day 03 Notes](https://colab.research.google.com/drive/1SDLZmZa6XtBTw_1pYRkciHwXe6opo7xc?usp=sharing)
-
-> **Action Item:** Apply all the commands below on my own minor project dataset, not just the student dataset used for demonstration.
 
 ---
 
@@ -194,16 +184,14 @@ An outlier is an observation that is significantly different from the rest of th
 ---
 
 ## Key Learnings
-- There's no single "correct" way to handle missing values - the right method (drop/mean/median/mode) depends on the column type and whether outliers are present.
-- Median is safer than mean for filling missing values when a column has outliers.
-- Text data needs cleaning too - inconsistent casing or spacing can silently break groupings and filters.
-- The IQR method gives a repeatable, non-visual way to detect outliers, useful when boxplots aren't practical for many columns.
-- These aren't just demo commands - the real task is applying this exact cleaning pipeline on my own minor project dataset.
+- Missing value method (drop/mean/median/mode) depends on column type and outliers.
+- Median is safer than mean when outliers are present.
+- IQR method gives a repeatable way to detect outliers beyond just boxplots.
 
 ---
 
 ## Reflection
-Data cleaning felt like the most 'real-world' session so far - it's clear now why every data project starts here instead of jumping straight to analysis. The four ways to handle missing values (drop/mean/median/mode) made sense individually, but deciding which one to use on my own dataset still needs practice. The IQR method for outliers was new and felt more systematic than just eyeballing a boxplot. Need to actually run this whole cleaning pipeline on my minor project dataset before the next session, as instructed.
+Felt like the most "real-world" session so far - clear now why cleaning always comes before analysis. Deciding which missing-value method to use still needs practice. Next step: run this same pipeline on my own dataset.
 
 
 
@@ -211,8 +199,8 @@ Data cleaning felt like the most 'real-world' session so far - it's clear now wh
 
 # Day 04 - Exploratory Data Analysis: Univariate, Bivariate & Multivariate
 
-**Date:** 03/07/2026
-**Week:** 1 · Foundational Course
+**Date:** 03/07/2026 <br>
+**Week:** 1 · Foundational Course <br>
 **Session Focus:** Exploratory Data Analysis Techniques
 
 ---
@@ -222,7 +210,6 @@ The session covered Exploratory Data Analysis (EDA) in depth - starting with cat
 
 **Trainer's Notes (Colab):** [Day 04 Notes](https://colab.research.google.com/drive/1LsnDcyFon_POUCja8vu8Dw2Vz5zFXpFL?usp=sharing)
 
-> **Action Item:** Apply all the commands below on my own minor project dataset, not just the student dataset used for demonstration.
 
 ---
 
@@ -279,19 +266,138 @@ Feature engineering means generating entirely new variables from existing data. 
 ---
 
 ## Key Learnings
-- Univariate, Bivariate, and Multivariate analysis build on each other - start with one variable, then two, then several together.
-- `groupby()` is the core tool for comparing categories against a numeric measure.
-- Correlation values only capture linear relationships, and don't imply causation.
-- Feature engineering often starts as a simple boolean condition on existing columns, not something complicated.
-- Filtering and sorting are as important as summary statistics for actually understanding a dataset.
+- Univariate → Bivariate → Multivariate analysis build on each other.
+- `groupby()` is the core tool for comparing categories against a metric.
+- Correlation shows strength/direction only, not causation.
 
 ---
 
 ## Reflection
-This was a dense session - univariate, bivariate, and multivariate analysis in one day took a bit of re-reading to keep straight. groupby() clicked well since it's similar to pivot tables I've used before. The crosstab and correlation sections were useful but I'd like more practice interpreting correlation values in a real dataset rather than just reading the numbers. Feature engineering felt easier than expected - creating True/False columns from conditions is intuitive. Applying all of today's techniques on my own dataset is the next priority.
+Dense session - a lot to take in across univariate, bivariate, and multivariate analysis. groupby() clicked quickly, correlation needs more practice. Next priority: apply these techniques on my own dataset.
 
 
 
 ---
- 
+
+# Day 05 - Data Visualization with Matplotlib & Seaborn
+
+**Date:** 06/07/2026  
+**Week:** 1 · Foundational Course  
+**Session Focus:** Data Visualization Techniques  
+
+---
+
+### Session Summary
+This session focused on **Data Visualization**, the art of representing data graphically to make patterns, relationships, and insights easier to understand. Instead of scanning through raw tables, charts such as bar graphs or scatter plots allow immediate recognition of trends. For example, comparing average CGPA by department is far more intuitive when shown as a bar chart rather than a numeric table.
+
+We explored the differences between **Matplotlib** and **Seaborn**, practiced nearly every major chart type on the student dataset, and concluded with correlation analysis using heatmaps and pairplots. The emphasis was on choosing the right visualization for the right type of data.
+
+**Trainer's Notes (Colab):** [Day 05 Notes](https://colab.research.google.com/drive/1q0dAmLuilpNvNx5qR24ejMlYsADrGGE4?usp=sharing)  
+
+---
+
+### Why Visualization Matters
+Visualization is not just about making data look attractive — it is about making data **meaningful**. Key benefits include:
+- Quickly understanding large datasets  
+- Identifying **trends** over time  
+- Detecting **outliers** that may distort analysis  
+- Comparing groups or categories effectively  
+- Discovering hidden relationships between variables  
+- Supporting better **business and academic decisions**  
+
+---
+
+### Matplotlib vs Seaborn
+- **Matplotlib** - basic plotting library, highly customizable, good for simple charts.
+- **Seaborn** - built on top of Matplotlib, has more attractive default styles, easier statistical plots, and better integration with Pandas.
+---
+
+### Chart Selection Guide
+
+| Chart        | Data Type             | Purpose                  |
+|--------------|-----------------------|--------------------------|
+| Histogram    | Numerical             | Distribution of values   |
+| Boxplot      | Numerical             | Spread & outliers        |
+| Countplot    | Categorical           | Frequency counts         |
+| Bar Chart    | Categorical + Numeric | Group comparisons        |
+| Pie Chart    | Categorical           | Percentages              |
+| Line Chart   | Time Series           | Trends over time         |
+| Scatter Plot | Numerical + Numerical | Relationships            |
+| Heatmap      | Numerical             | Correlation matrix       |
+
+---
+
+### Distribution Charts
+- **Histogram (`plt.hist`)**: Plotted Attendance distribution across 10 bins to observe spread.  
+- **Histogram with KDE (`sns.histplot` with `kde=True`)**: Added smooth Kernel Density Estimate curve on Study Hours, highlighting concentration zones more clearly than bars alone.  
+
+---
+
+### Boxplots
+Boxplots summarize data using **minimum, Q1, median, Q3, maximum, and outliers**.  
+- Example: CGPA boxplot revealed spread and flagged unusual values.  
+- Outliers appeared as dots beyond whiskers, useful for spotting anomalies.  
+
+---
+
+### Categorical Charts
+- **Countplot (`sns.countplot`)**: Showed number of students per Department and Placement_Status.  
+- **Bar Plot (`sns.barplot`)**: Displayed average CGPA and Attendance by Department (after `groupby()` summarization).  
+- **Pie Chart (`df[...].value_counts().plot(kind="pie")`)**: Placement_Status percentages with `autopct="%1.1f%%"`.  
+
+---
+
+### Line and Area Charts
+- **Line Chart (`plt.plot`)**: Average CGPA across semesters, with markers and gridlines for clarity.  
+- **Area Chart (`plt.fill_between`)**: Same CGPA trend, but shaded under the line to emphasize magnitude.  
+
+---
+
+### Violin Plots
+Violin plots combine **boxplot statistics** with **distribution shape (KDE)**.  
+- Wide regions = many students in that CGPA range.  
+- Narrow regions = fewer students.  
+- Long violin = high variation; short violin = values clustered.  
+- Used to compare CGPA distribution across departments.  
+
+---
+
+### Scatter Plots
+- Scatter plots are used to display the relationship between two numerical variables.  
+- They help in identifying patterns such as positive or negative correlations, clusters of data points, or unusual outliers. By adding color or grouping, scatter plots can also highlight differences across categories, making relationships easier to interpret visually.
+
+
+---
+
+### Correlation and Heatmaps
+Correlation values range from -1 to +1:  
+
+| Value Range       | Interpretation              |
+|-------------------|-----------------------------|
+| +1                | Perfect positive correlation |
+| +0.7 to +0.9      | Strong positive correlation  |
+| +0.3 to +0.7      | Moderate positive correlation|
+| 0                 | No relationship              |
+| Negative values   | Inverse relationship         |
+
+- Example: Attendance vs CGPA correlation ≈ **+0.85** (strong positive).  
+- **Heatmap (`sns.heatmap(df.corr())`)**: Visualized correlations across all numeric columns with color scale + annotations.  
+- **Pairplot (`sns.pairplot`)**: Compared CGPA, Attendance, Study_Hours, Family_Income in one grid for quick relationship spotting.  
+
+---
+
+### Key Learnings
+- Chart choice depends on data type.  
+- Seaborn simplifies statistical plots.  
+- Correlation shows strength, not causation.  
+- Heatmaps/pairplots quickly reveal multiple relationships.  
+
+---
+
+### Reflection
+The scatter plot of Attendance vs CGPA made correlation visually clear. The chart‑selection guide will help until choosing becomes instinctive. Violin plots were new but comparing them with boxplots clarified their meaning. Next step: apply this toolkit to my minor project dataset.
+
+---
+
+
 [Back to Diary Home](README.md)
