@@ -19,6 +19,8 @@ To illustrate this distinction, the trainer highlighted examples where unorganiz
 
 ---
 
+### Topics Covered
+
 ### Types of Data
 The session categorized data into multiple forms:
 - **Structured Data** - neatly organized in rows and columns, such as relational databases.
@@ -91,6 +93,8 @@ The session moved from Python fundamentals into real data-handling tools. It beg
 
 ---
 
+### Topics Covered
+
 ### Data Types in Python
 Python needs to know what kind of data it's handling before it can process it:
 - **Integer (`int`)** - whole numbers, e.g., `age = 21`
@@ -150,6 +154,8 @@ The session covered **Data Cleaning** - the process of identifying and correctin
 **Trainer's Notes (Colab):** [Day 03 Notes](https://colab.research.google.com/drive/1SDLZmZa6XtBTw_1pYRkciHwXe6opo7xc?usp=sharing)
 
 ---
+
+### Topics Covered
 
 ### Missing Values
 Missing values occur when no data is recorded for a particular observation (e.g., a student absent, sensor failure, or a skipped survey question). Detected using `df.isnull()` and `df.isnull().sum()`.
@@ -212,6 +218,8 @@ The session covered Exploratory Data Analysis (EDA) in depth - starting with cat
 
 
 ---
+
+### Topics Covered
 
 ### Categorical Column Summaries
 Before deeper analysis, categorical columns were explored using:
@@ -295,6 +303,8 @@ We explored the differences between **Matplotlib** and **Seaborn**, practiced ne
 **Trainer's Notes (Colab):** [Day 05 Notes](https://colab.research.google.com/drive/1q0dAmLuilpNvNx5qR24ejMlYsADrGGE4?usp=sharing)  
 
 ---
+
+### Topics Covered
 
 ### Why Visualization Matters
 Visualization is not just about making data look attractive — it is about making data **meaningful**. Key benefits include:
