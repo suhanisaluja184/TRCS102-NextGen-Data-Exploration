@@ -67,7 +67,7 @@ Feature engineering felt like a toolbox session - lots of distinct techniques ra
 ### Session Summary
 The session addressed a real problem: a college dataset predicting student placement has 16 features (Age, Gender, CGPA, Attendance, Study Hours, Family Income, Hosteller, Internet Usage, Assignments, Projects, Sports, Seminar Score, Backlogs, Lab Marks, Programming Score, Communication Score). More features mean more computation, more memory, slower training, and sometimes even lower accuracy - a problem called **High Dimensional Data**. PCA was introduced as the solution, demonstrated on the student dataset.
  
-**Trainer's Notes (Colab):** [Day 07 Notes](PASTE_TRAINER_NOTES_LINK_HERE)
+**Trainer's Notes (Colab):** [Day 07 Notes](https://colab.research.google.com/drive/1-p_irOj3K61ZXDreBP4aof1_ApUfv3z0?usp=sharing)
  
  
 ---
