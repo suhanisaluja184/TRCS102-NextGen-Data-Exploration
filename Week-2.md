@@ -102,5 +102,143 @@ It functions by transforming the original, often correlated features into a smal
 The luggage analogy made PCA click faster than I expected - compressing without losing what matters. The scatter plot of PC1 vs PC2 was the best part, seeing students actually cluster by similarity. Explained variance ratio needs a bit more practice to interpret confidently. Want to check if my own dataset has enough correlated numeric features to justify using PCA.
  
 ---
+
+# Day 08 - Handling Imbalanced Data
+
+**Date:** 07/07/2026 <br>
+**Week:** 2 · Foundational Course <br>
+**Session Focus:** Resampling Techniques for Class Imbalance  
+
+---
+
+### Session Summary
+This session introduced **Imbalanced Data** — when one class has far more samples than another. Such imbalance causes models to favor the majority class, leading to poor performance on the minority class and misleading accuracy.  
+Example: In fraud detection or rare disease diagnosis, the minority class is the most critical, yet often overlooked.  
+
+On the student dataset, out of 490 students, ~35% were *Placed* and ~75% were *Not Placed*, confirming imbalance. Multiple resampling techniques were demonstrated to address this issue.
+
+**Trainer's Notes (Colab):** Day 08 Notes  
+
+---
+
+### Why Imbalanced Data is a Problem
+- Models get biased toward the majority class.  
+- Minority class instances may be treated as noise.  
+- Accuracy becomes misleading (e.g., always predicting "Not Fraud" still gives 99% accuracy).  
+- Skewed decision boundaries → poor generalization on minority class.  
+
+---
+
+### Checking the Imbalance
+- Used **value counts** and **countplot** to measure imbalance.  
+- Confirmed minority class (Placed) was significantly underrepresented.  
+
+---
+
+### Train-Test Split
+- Important to split before resampling.  
+- Used **stratify option** to preserve class ratios in both train and test sets.  
+
+---
+
+### Resampling Techniques
+
+Resampling methods are strategies to balance datasets where one class dominates. Each technique has its own strengths, weaknesses, and ideal use cases.  
+
+---
+
+#### 1. Random Oversampling
+- **How it works:** Duplicates minority class samples (with replacement) until both classes have equal counts.  
+- **Advantages:**  
+  - Very simple to implement.  
+  - Ensures the minority class is represented equally.  
+- **Disadvantages:**  
+  - Creates exact duplicates, which can cause the model to memorize rather than generalize.  
+  - Risk of **overfitting** to repeated minority examples.  
+- **Use Case Example:** In a loan default dataset, existing defaulter records are copied multiple times until their count matches non‑defaulters.  
+
+---
+
+#### 2. Random Undersampling
+- **How it works:** Removes majority class samples at random until both classes are balanced.  
+- **Advantages:**  
+  - Avoids duplication and reduces dataset size.  
+  - Faster training since fewer samples remain.  
+- **Disadvantages:**  
+  - Discards potentially useful majority data.  
+  - Can lead to loss of important patterns.  
+- **Use Case Example:** In defect detection, where good products vastly outnumber defective ones, undersampling removes excess “good product” records.  
+
+---
+
+#### 3. SMOTE (Synthetic Minority Oversampling Technique)
+- **How it works:** Creates synthetic minority samples by interpolating between existing minority points and their nearest neighbors.  
+- **Advantages:**  
+  - Produces more diverse minority samples.  
+  - Reduces overfitting compared to simple duplication.  
+- **Disadvantages:**  
+  - Can generate unrealistic samples if minority data is sparse.  
+  - May blur class boundaries if not carefully applied.  
+- **Use Case Example:** In rare disease diagnosis, SMOTE generates synthetic patient records that resemble realistic variations.  
+
+---
+
+#### 4. Tomek Links
+- **How it works:** Identifies pairs of nearest‑neighbor points from different classes (called Tomek links) and removes the majority class point.  
+- **Advantages:**  
+  - Cleans overlapping regions between classes.  
+  - Sharpens decision boundaries.  
+- **Disadvantages:**  
+  - Does not balance classes by itself; usually combined with other methods.  
+- **Use Case Example:** In spam filtering, Tomek Links remove borderline legitimate emails that closely resemble spam.  
+
+---
+
+#### 5. ADASYN (Adaptive Synthetic Sampling)
+- **How it works:** Builds on SMOTE but focuses on generating synthetic samples near the decision boundary, especially for minority points that are harder to classify.  
+- **Advantages:**  
+  - Targets the most challenging regions for classification.  
+  - Improves model robustness on difficult cases.  
+- **Disadvantages:**  
+  - Can introduce noise if boundary regions are not well defined.  
+  - More computationally intensive than SMOTE.  
+- **Use Case Example:** In fraud detection, ADASYN generates synthetic fraud transactions that closely resemble genuine ones, making the model better at catching subtle fraud.  
+
+---
+
+#### 6. SMOTETomek (Combined Approach)
+- **How it works:** First applies SMOTE to generate synthetic minority samples, then uses Tomek Links to remove overlapping or noisy majority points.  
+- **Advantages:**  
+  - Balances classes while cleaning boundaries.  
+  - Combines strengths of oversampling and boundary refinement.  
+- **Disadvantages:**  
+  - More complex to implement.  
+  - May require careful parameter tuning.  
+- **Use Case Example:** In loan default prediction, SMOTETomek generates synthetic default cases and removes ambiguous overlaps, resulting in a cleaner dataset for risk modeling.  
+
+---
+
+### Summary
+- **Oversampling** → Adds minority samples (risk: overfitting).  
+- **Undersampling** → Removes majority samples (risk: information loss).  
+- **SMOTE/ADASYN** → Generate synthetic samples (better generalization).  
+- **Tomek Links** → Clean overlapping boundaries.  
+- **SMOTETomek** → Hybrid approach for balance + boundary clarity.  
+
+---
+
+### Key Learnings
+- Imbalanced data is common in real-world problems.  
+- Accuracy alone is not reliable for imbalanced datasets.  
+- Resampling techniques (oversampling, undersampling, SMOTE, ADASYN, Tomek Links) help balance classes.  
+- Always split train/test before resampling to keep evaluation realistic.  
+
+---
+
+### Reflection
+This session highlighted why imbalance is dangerous and how naive accuracy can be misleading. Techniques like SMOTE and ADASYN felt powerful because they create synthetic variety rather than just duplicating data. Next step: apply these methods to my minor project dataset to ensure fair model performance.
+
+ ---
+
  
 [Back to Diary Home](README.md)
