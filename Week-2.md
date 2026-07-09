@@ -117,7 +117,7 @@ Example: In fraud detection or rare disease diagnosis, the minority class is the
 
 On the student dataset, out of 490 students, ~35% were *Placed* and ~75% were *Not Placed*, confirming imbalance. Multiple resampling techniques were demonstrated to address this issue.
 
-**Trainer's Notes (Colab):** Day 08 Notes  
+**Trainer's Notes (Colab):** [Day 08 Notes](https://colab.research.google.com/drive/1m0WmZlZG9iEYE9XtxcdRmFbBK8jqeVYB?usp=sharing)
 
 ---
 
