@@ -103,5 +103,28 @@ Naive Bayes (99.17%) edged out KNN and SVM (both 98.33%) on this dataset. A "bes
 Comparing three algorithms on the exact same dataset and test case made the differences between them click much faster than reading about them separately would have. It was surprising that Naive Bayes and KNN/SVM disagreed on one prediction despite all having 98%+ accuracy - a good reminder that accuracy alone doesn't tell the whole story. The "best algorithm for the situation" table feels like something worth keeping handy for the minor project.
  
 ---
+
+# Day 13 - Minor Project Progress Review
+ 
+**Date:** 16/07/2026 <br>
+**Week:** 3 · Foundational Course <br>
+**Session Focus:** Project Status Check-in with Mentor
+ 
+---
+ 
+### Session Summary
+Instead of a new topic, today's session was a **progress review** - the mentor went around the batch checking every student's minor project status, covering a wide range of domains (healthcare prediction, sales forecasting, bug tracking, recommendation systems, fraud/spam detection, and more), and gave feedback or next-step suggestions to each student individually.
+ 
+---
+ 
+### My Project: SentinelAI - BugTracker SLA Router
+SentinelAI is a bug-tracking tool that predicts whether a bug/ticket will breach its SLA deadline (Yes/No), so teams can flag at-risk tickets early and prioritize accordingly.
+ 
+**Mentor's Questions & My Answers:**
+- **Progress so far:** Model training is complete - a Logistic Regression model has been trained on the ticket data.
+- **What's pending:** Building `app.py` to turn the trained model into a working front-end web page, so the SLA-breach prediction is actually usable through an interface rather than just running in a notebook.
+- **Why Logistic Regression:** Because the core task is a binary classification problem (SLA breach: Yes or No) - Logistic Regression is a strong, interpretable baseline for this kind of Yes/No prediction, which fits the earlier Day 11/12 sessions on choosing classification algorithms.
+---
+
  
 [Back to Diary Home](README.md)
