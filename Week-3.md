@@ -124,6 +124,51 @@ SentinelAI is a bug-tracking tool that predicts whether a bug/ticket will breach
 - **Progress so far:** Model training is complete - a Logistic Regression model has been trained on the ticket data.
 - **What's pending:** Building `app.py` to turn the trained model into a working front-end web page, so the SLA-breach prediction is actually usable through an interface rather than just running in a notebook.
 - **Why Logistic Regression:** Because the core task is a binary classification problem (SLA breach: Yes or No) - Logistic Regression is a strong, interpretable baseline for this kind of Yes/No prediction, which fits the earlier Day 11/12 sessions on choosing classification algorithms.
+  
+---
+
+# Day 14 - Decision Tree & Random Forest
+ 
+**Date:** 17/07/2026 <br>
+**Week:** 3 · Foundational Course <br>
+**Session Focus:** Tree-Based Classification Algorithms
+ 
+---
+ 
+### Session Summary
+The session covered two tree-based algorithms - Decision Tree and Random Forest - continuing the classification comparison from Days 12 and 13 on the same Teen Mental Health dataset (predicting Depressed/Not Depressed).
+ 
+**Trainer's Notes (Colab):** [Day 14 Notes](https://colab.research.google.com/drive/1YaDdfkLf5ygS8nP3pG1b1lyx8AQv_3lA?usp=sharing)
+ 
+---
+ 
+### Topics Covered
+ 
+**Decision Tree**
+- Splits a dataset using "if-then-else" logic, forming an upside-down tree of yes/no questions (e.g., "Is stress_level <= 6.5?" then "Is sleep_hours <= 5.85?").
+- Uses **Gini Impurity** or **Entropy** to measure how mixed a node is, and **Information Gain** to pick the best feature to split on at each step.
+- Advantages: easy to visualize and interpret.
+- Disadvantages: prone to overfitting.
+- Result: reached a perfect 1.00 accuracy on the dataset - first split was on stress_level, then sleep_hours and anxiety_level for harder cases.
+- Note: a 100% score is unusually high and likely reflects overfitting on a small minority class rather than genuinely perfect prediction.
+  
+**Random Forest**
+- Builds an ensemble of many Decision Trees, each trained on a different data subset, then combines predictions through voting ("wisdom of the crowd").
+- Advantages: more accurate and resistant to overfitting than a single tree.
+- Disadvantages: slower, uses more memory, harder to interpret.
+- Result: reached about 97.9% accuracy - slightly lower than the single tree, but likely more trustworthy since it doesn't overfit as easily.
+- Feature importance ranking: sleep_hours mattered most, followed by daily_social_media_hours, anxiety_level, and stress_level; academic_performance and addiction_level mattered least.
+---
+ 
+## Key Learnings
+- A perfect 100% accuracy (like the single Decision Tree here) is often a red flag for overfitting, not a sign of a great model.
+- Random Forest trades a bit of raw accuracy for more stability by combining many trees instead of relying on one.
+- Feature importance from Random Forest is useful beyond just prediction - it shows which inputs actually drive the outcome (sleep and social media use mattered most for depression here).
+---
+ 
+## Reflection
+Seeing the Decision Tree hit 100% accuracy was a good practical lesson in not trusting a perfect score blindly - Random Forest's slightly lower but more balanced accuracy felt more believable. The feature importance chart was the most useful output today, since it directly shows which factors the model is actually relying on. Want to check feature importance on my own dataset once the model is retrained.
+ 
 ---
 
  
