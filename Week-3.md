@@ -171,5 +171,50 @@ Seeing the Decision Tree hit 100% accuracy was a good practical lesson in not tr
  
 ---
 
+# Day 15 - Linear Regression, Ridge & Lasso
+
+**Date:** 20/07/2026 <br>
+**Week:** 3 · Foundational Course <br>
+**Session Focus:** Regression Models and Regularization Techniques
+
+---
+
+### Session Summary
+The session shifted focus from classification to regression models, exploring **Linear Regression** alongside regularized variations (**Ridge** and **Lasso Regression**) using the same Teen Mental Health dataset features to predict continuous outputs and evaluating performance.
+
+**Trainer's Notes (Colab):** [Day 15 Notes](https://colab.research.google.com/drive/1CEDhIxBYtFLH8BZIYJ0hx2MWCNhlI-JV?usp=sharing)
+
+---
+
+### Topics Covered
+
+**Linear Regression**
+- A supervised learning algorithm used to predict continuous numerical values by finding the best-fit straight line between input features and the target variable.
+- Uses all features without penalizing coefficients, which can lead to overfitting if many irrelevant features exist.
+- Results: Achieved an accuracy of 0.975 (via thresholding continuous predictions at 0.5), an R2 Score of ~0.1277, and a Mean Squared Error (MSE) of ~0.0212.
+
+**Ridge Regression (L2 Regularization)**
+- A regularized version of Linear Regression that adds an L2 penalty to the cost function.
+- Characteristics: Keeps all features, reduces their influence by shrinking coefficients toward zero, and handles multicollinearity well.
+- Results: Maintained identical performance metrics (Accuracy: 0.975, R2 Score: ~0.1277, MSE: ~0.0212) while reducing coefficient magnitudes.
+
+**Lasso Regression (L1 Regularization)**
+- Adds an L1 penalty to the cost function, shrinking some coefficients completely to zero and automatically performing feature selection.
+- Characteristics: Removes unnecessary features entirely, producing simpler, more interpretable models ideal for datasets with many irrelevant variables.
+- Results: Accuracy: 0.975, R2 Score: ~0.1214, MSE: ~0.0214, successfully zeroing out irrelevant features like favorite color or sports.
+
+---
+
+## Key Learnings
+- Linear Regression uses all available features as-is, which risks sensitivity to noise and irrelevant data.
+- Ridge Regression controls large coefficients using L2 penalties without dropping features, making it robust against multicollinearity.
+- Lasso Regression performs automatic feature selection using L1 penalties, driving coefficients of useless features down to zero to simplify the model.
+
+---
+## Reflection
+Comparing Linear, Ridge, and Lasso side-by-side in a summary dataframe clearly showed how regularization impacts coefficients without drastically destroying model accuracy. Lasso's ability to zero out irrelevant features makes it extremely practical when dealing with messy or high-dimensional real-world datasets. Want to apply Lasso to my own project data to automatically weed out noise features.
+
+---
+
  
 [Back to Diary Home](README.md)
